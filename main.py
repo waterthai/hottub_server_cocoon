@@ -13,6 +13,7 @@ from urllib.request import urlopen
 import json
 from path_url import Path_URL
 from setting_dashboard import Setting_dashboard
+from restart import *
 
 
 setting_mode = Setting_mode
@@ -26,6 +27,7 @@ setting_besgo = Setting_besgo
 setting_substance = Setting_substance
 path_file = Path_URL
 setting_dashboard = Setting_dashboard
+
 
 machine_code = ""
 path_url = path_file.path_local+"api/Rest_api/get_data_setting"
@@ -57,7 +59,7 @@ while True:
         else:
            time.sleep(3)
     except:
-        pass
+        restart_programs()
    
 
    
